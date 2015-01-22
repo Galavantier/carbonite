@@ -1,0 +1,27 @@
+//PLACEHOLDER
+  //1. MIXIN
+  @mixin placeholder {
+    &::-webkit-input-placeholder {@content}
+    &:-moz-placeholder           {@content}
+    &::-moz-placeholder          {@content}
+    &:-ms-input-placeholder      {@content}  
+  }
+
+  //2. USAGE
+  //input { @include placeholder {
+  //    font-family: $base-font-family;
+  //    color: red;
+  //}}
+
+//SELECTION
+  //1. MIXIN
+  @mixin selection {
+    &::-moz-selection  {@content}
+    &::selection       {@content}
+  }
+
+  //2. USAGE
+  //body { @include selection {
+  //    color: white;
+  //    background-color: red;
+  //}}

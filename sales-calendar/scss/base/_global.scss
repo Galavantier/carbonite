@@ -1,0 +1,33 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  line-height: 1.1em;
+  font-weight: 400;
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+// mobile first design pattern
+#container {
+  width: auto;
+  overflow: auto;
+  @media only screen and (min-width: $screen-lg-min) {
+    max-width: $screen-lg;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1119px) and (min-width: 768px) {
+
+}
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+  
+}
+@media only screen and (max-width: 479px) {
+  
+}

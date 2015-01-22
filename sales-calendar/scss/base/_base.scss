@@ -1,0 +1,259 @@
+body {
+  background: $gallery;
+}
+
+#container {
+  background: $white;
+}
+.legend {
+  list-style: none;
+}
+.legend-item {
+  display: inline-block;
+  padding-right: 15px;
+  div {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+  }
+  .legend-new {
+    border-left: 20px solid $viridian-green;
+  }
+  .legend-confirmed {
+    border-left: 20px solid $teak;
+  }
+  .legend-completed {
+    border-left: 20px solid $matrix;
+  }
+  .legend-venue {
+    border-left: 20px solid $lynch;
+  }
+  .legend-cancelled {
+    border-left: 20px solid $silver;
+  }
+}
+.nav {
+  display: table;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 5px;
+  width: 100%;
+  text-transform: uppercase;
+  background: $mine-shaft;
+  div {
+    display: table-cell;
+  }
+  .nav-next a, .nav-prev a {
+    text-decoration: underline;
+    color: $white;
+  }
+  .nav-prev {
+    padding-left: 10px;
+  }
+  .nav-month-select {
+    text-align: center;
+  }
+  .nav-next {
+    text-align: right;
+    padding-right: 10px;
+  }
+}
+.cal {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  font-size: 14px;
+  background: $white;
+}
+.cal-week {
+  display: table-row;
+}
+.cal-day {
+  display: table-cell;
+  padding-top: 2px;
+  &:not(:last-child) {
+    padding-right: 2px;
+  }
+}
+.cal-sub {
+  color: $white;
+  background: $chicago;
+  padding: 3px;
+  .today & {
+    background-color: $mine-shaft !important;
+  }
+}
+.cal-day-item {
+  margin-top: 2px;
+  height: 309px;
+  transition: height 0.25s ease;
+  overflow: hidden;
+  &:not(.active) {
+    height: 65px;
+    .title, .detail ~ .detail, .cal-day-footer { 
+      //the ~ same element trick selects all but the first in a situation where :first-child, :nth-child(1), or :nth-of-tpye(1) won't work
+      display: none;
+    }
+  }
+}
+.cal-day-header, .cal-day-footer {
+  font-size: 14px;
+  padding: 3px;
+  background: $silver;
+  text-align: center;
+  color: $white;
+  a {
+    color: $white;
+  }
+  .new & {
+    background: $viridian-green;
+  }
+  .confirmed & {
+    background: $teak
+  }
+  .completed & {
+    background: $matrix;
+  }
+  .venue & {
+    background: $lynch;
+  }
+}
+.cal-day-header {
+  cursor: pointer;
+}
+.cal-day-info {
+  padding: 3px;
+  border-width: 1px;
+  border-style:  solid;
+  border-color: $silver;
+  a {
+    color: $red;
+    text-decoration: underline;
+  }
+  .title {
+    font-size: 12px;
+    color: $silver-chalice;
+  }
+  .detail {
+    font-size: 14px;
+    color: $mine-shaft;
+  }
+  .new & {
+    border-color: $viridian-green;
+  }
+  .confirmed & {
+    border-color: $teak
+  }
+  .completed & {
+    border-color: $matrix;
+  }
+  .venue & {
+    border-color: $lynch;
+  }
+  .detail.balance {
+    color: $red;
+  }
+}
+.host-input {
+  width: 80%;
+  height: 22px;
+  border: 1px solid $red;
+}
+.host-submit {
+  width: 19%;
+  height: 22px;
+  margin-left: 1%;
+  border: 1px solid $red;
+  background: $red;
+  .check {
+    content: $svg-check;
+    height: 100%;
+    width: 100%;
+    margin-top: -50%;
+    padding-top: 50%;
+  }
+}
+
+//.calendar {
+//  display: table;
+//  table-layout: fixed;
+//  width: 100%;
+//  font-size: 14px;
+//  background: $white;
+//}
+//.calendar-week {
+//  display: table-row;
+//}
+//.calendar-day-container {
+//  display: table-cell;
+//  color: $white;
+//  padding-right: 2px;
+//  padding-bottom: 2px;
+//}
+//.calendar-day-container:last-child {
+//  padding-right: 0;
+//}
+//.calendar-date {
+//  background-color: $chicago;
+//  border: 2px solid $chicago;
+//  padding: 4px;
+//}
+//.today {
+//  background-color: $mine-shaft !important;
+//  border: 2px solid $mine-shaft !important;
+//}
+//.calendar-day {
+//  margin-top: 2px;
+//}
+//.calendar-day-header {
+//  text-align: center;
+//  font-size: 12px;
+//  color: $white;
+//}
+//.new {
+//  background: $viridian-green;
+//  border: 1px solid $viridian-green;
+//  & + .calendar-day-info {
+//    border: 1px solid $viridian-green;
+//  }
+//}
+//.confirmed {
+//  background: $teak;
+//  border: 1px solid $teak;
+//  & + .calendar-day-info {
+//    border: 1px solid $teak;
+//  }
+//}
+//.completed {
+//  background: $matrix;
+//  border: 1px solid $matrix;
+//  & + .calendar-day-info {
+//    border: 1px solid $matrix;
+//  }
+//}
+//.venue {
+//  background: $lynch;
+//  border: 1px solid $lynch;
+//  & + .calendar-day-info {
+//    border: 1px solid $lynch;
+//  }
+//}
+//.cancelled {
+//  background: $silver;
+//  border: 1px solid $silver;
+//  & + .calendar-day-info {
+//    border: 1px solid $silver;
+//  }
+//}
+//.calendar-day-title {
+//  color: $silver-chalice;
+//  font-size: 10px;
+//}
+//.calendar-day-header {
+//  padding: 3px;
+//}
+//.calendar-day-info {
+//  color: $mine-shaft;
+//  font-size: 12px;
+//  padding: 3px;
+//}

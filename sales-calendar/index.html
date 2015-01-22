@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sales Calendar</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div class="cal-head">
+      <ul class="legend">
+        <li class="legend-item">
+          <div class="legend-new">New</div>
+        </li>
+        <li class="legend-item">
+          <div class="legend-confirmed">Confirmed</div>
+        </li>
+        <li class="legend-item">
+          <div class="legend-completed">Completed</div>
+        </li>
+        <li class="legend-item">
+          <div class="legend-venue">Booked with Venue</div>
+        </li>
+        <li class="legend-item">
+          <div class="legend-cancelled">Cancelled</div>
+        </li>
+      </ul>
+      <div class="nav">
+        <div class="nav-prev"><a href="#">PREVIOUS MONTH</a></div>
+        <select class="nav-month-select">
+          <option value="1">January</option>
+          <option value="2">February</option>
+          <option value="3">March</option>
+          <option value="4">April</option>
+          <option value="5">May</option>
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">August</option>
+          <option value="9">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+        <div class="nav-next"><a href="#">NEXT MONTH</a></div>
+      </div>
+    </div>
+    <div class="cal">
+      <div class="cal-week">
+        <div class="cal-day today">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/01/15</div>
+          </div>
+          <div class="cal-day-item new active">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+          <div class="cal-day-item confirmed">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+          
+          <div class="cal-day-item completed">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+          
+          <div class="cal-day-item venue">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/02/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/03/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/04/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/05/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/06/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/07/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="cal-week">
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/01/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/02/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/03/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/04/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/05/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/06/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/07/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="cal-week">
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/01/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/02/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/03/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/04/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/05/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/06/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/07/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="cal-week">
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/01/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/02/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/03/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/04/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/05/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/06/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/07/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="cal-week">
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/01/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/02/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/03/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/04/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/05/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/06/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+        <div class="cal-day">
+          <div class="cal-sub">
+            <div class="cal-sub-date">DAY</div>
+            <div class="cal-sub-day">01/07/15</div>
+          </div>
+          <div class="cal-day-item">
+            <div class="cal-day-header">Escalade or Denali SUV</div>
+            <div class="cal-day-info">
+              <div class="title organizer">Organizer</div>
+              <div class="detail organizer">Roseanne Sesto</div>
+              <div class="title organizer-phone">Organizer #</div>
+              <div class="detail organizer-phone">+1 702 111 2222</div>
+              <div class="title organizer-email">Organizer Email</div>
+              <div class="detail organizer-email">customer@test.com</div>
+              <div class="title balance">Balance Due</div>
+              <div class="detail balance">$337.50</div>
+              <div class="title sales-rep">Sales Rep</div>
+              <div class="detail sales-rep">Devin Marie</div>
+              <div class="title" product>Product</div>
+              <div class="detail product">VIP Host Entry</div>
+              <div class="title host">Host</div>
+              <div class="detail host"><a href="#">Roseanne Sesto</a></div>
+            </div>
+            <div class="cal-day-footer"><a href="#">Order #32310</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

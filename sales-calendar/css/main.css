@@ -1,0 +1,316 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../scss/base/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 15, ../scss/base/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 18, ../scss/base/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 21, ../scss/base/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../scss/base/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 27, ../scss/base/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 31, ../scss/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../scss/base/_global.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* line 5, ../scss/base/_global.scss */
+body {
+  font-size: 16px;
+  line-height: 1.1em;
+  font-weight: 400;
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* line 12, ../scss/base/_global.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 16, ../scss/base/_global.scss */
+#container {
+  width: auto;
+  overflow: auto;
+}
+@media only screen and (min-width: 1120px) {
+  /* line 16, ../scss/base/_global.scss */
+  #container {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+}
+
+/* line 1, ../scss/base/_base.scss */
+body {
+  background: #eeeeee;
+}
+
+/* line 5, ../scss/base/_base.scss */
+#container {
+  background: white;
+}
+
+/* line 8, ../scss/base/_base.scss */
+.legend {
+  list-style: none;
+}
+
+/* line 11, ../scss/base/_base.scss */
+.legend-item {
+  display: inline-block;
+  padding-right: 15px;
+}
+/* line 14, ../scss/base/_base.scss */
+.legend-item div {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+}
+/* line 19, ../scss/base/_base.scss */
+.legend-item .legend-new {
+  border-left: 20px solid #699480;
+}
+/* line 22, ../scss/base/_base.scss */
+.legend-item .legend-confirmed {
+  border-left: 20px solid #aca056;
+}
+/* line 25, ../scss/base/_base.scss */
+.legend-item .legend-completed {
+  border-left: 20px solid #b15e56;
+}
+/* line 28, ../scss/base/_base.scss */
+.legend-item .legend-venue {
+  border-left: 20px solid #648098;
+}
+/* line 31, ../scss/base/_base.scss */
+.legend-item .legend-cancelled {
+  border-left: 20px solid #cccccc;
+}
+
+/* line 35, ../scss/base/_base.scss */
+.nav {
+  display: table;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 5px;
+  width: 100%;
+  text-transform: uppercase;
+  background: #333333;
+}
+/* line 43, ../scss/base/_base.scss */
+.nav div {
+  display: table-cell;
+}
+/* line 46, ../scss/base/_base.scss */
+.nav .nav-next a, .nav .nav-prev a {
+  text-decoration: underline;
+  color: white;
+}
+/* line 50, ../scss/base/_base.scss */
+.nav .nav-prev {
+  padding-left: 10px;
+}
+/* line 53, ../scss/base/_base.scss */
+.nav .nav-month-select {
+  text-align: center;
+}
+/* line 56, ../scss/base/_base.scss */
+.nav .nav-next {
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* line 61, ../scss/base/_base.scss */
+.cal {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  font-size: 14px;
+  background: white;
+}
+
+/* line 68, ../scss/base/_base.scss */
+.cal-week {
+  display: table-row;
+}
+
+/* line 71, ../scss/base/_base.scss */
+.cal-day {
+  display: table-cell;
+  padding-top: 2px;
+}
+/* line 74, ../scss/base/_base.scss */
+.cal-day:not(:last-child) {
+  padding-right: 2px;
+}
+
+/* line 78, ../scss/base/_base.scss */
+.cal-sub {
+  color: white;
+  background: #5d5d55;
+  padding: 3px;
+}
+/* line 82, ../scss/base/_base.scss */
+.today .cal-sub {
+  background-color: #333333 !important;
+}
+
+/* line 86, ../scss/base/_base.scss */
+.cal-day-item {
+  margin-top: 2px;
+  height: 309px;
+  transition: height 0.25s ease;
+  overflow: hidden;
+}
+/* line 91, ../scss/base/_base.scss */
+.cal-day-item:not(.active) {
+  height: 65px;
+}
+/* line 93, ../scss/base/_base.scss */
+.cal-day-item:not(.active) .title, .cal-day-item:not(.active) .detail ~ .detail, .cal-day-item:not(.active) .cal-day-footer {
+  display: none;
+}
+
+/* line 99, ../scss/base/_base.scss */
+.cal-day-header, .cal-day-footer {
+  font-size: 14px;
+  padding: 3px;
+  background: #cccccc;
+  text-align: center;
+  color: white;
+}
+/* line 105, ../scss/base/_base.scss */
+.cal-day-header a, .cal-day-footer a {
+  color: white;
+}
+/* line 108, ../scss/base/_base.scss */
+.new .cal-day-header, .new .cal-day-footer {
+  background: #699480;
+}
+/* line 111, ../scss/base/_base.scss */
+.confirmed .cal-day-header, .confirmed .cal-day-footer {
+  background: #aca056;
+}
+/* line 114, ../scss/base/_base.scss */
+.completed .cal-day-header, .completed .cal-day-footer {
+  background: #b15e56;
+}
+/* line 117, ../scss/base/_base.scss */
+.venue .cal-day-header, .venue .cal-day-footer {
+  background: #648098;
+}
+
+/* line 121, ../scss/base/_base.scss */
+.cal-day-header {
+  cursor: pointer;
+}
+
+/* line 124, ../scss/base/_base.scss */
+.cal-day-info {
+  padding: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc;
+}
+/* line 129, ../scss/base/_base.scss */
+.cal-day-info a {
+  color: red;
+  text-decoration: underline;
+}
+/* line 133, ../scss/base/_base.scss */
+.cal-day-info .title {
+  font-size: 12px;
+  color: #aaaaaa;
+}
+/* line 137, ../scss/base/_base.scss */
+.cal-day-info .detail {
+  font-size: 14px;
+  color: #333333;
+}
+/* line 141, ../scss/base/_base.scss */
+.new .cal-day-info {
+  border-color: #699480;
+}
+/* line 144, ../scss/base/_base.scss */
+.confirmed .cal-day-info {
+  border-color: #aca056;
+}
+/* line 147, ../scss/base/_base.scss */
+.completed .cal-day-info {
+  border-color: #b15e56;
+}
+/* line 150, ../scss/base/_base.scss */
+.venue .cal-day-info {
+  border-color: #648098;
+}
+/* line 153, ../scss/base/_base.scss */
+.cal-day-info .detail.balance {
+  color: red;
+}
+
+/* line 157, ../scss/base/_base.scss */
+.host-input {
+  width: 80%;
+  height: 22px;
+  border: 1px solid red;
+}
+
+/* line 162, ../scss/base/_base.scss */
+.host-submit {
+  width: 19%;
+  height: 22px;
+  margin-left: 1%;
+  border: 1px solid red;
+  background: red;
+}
+/* line 168, ../scss/base/_base.scss */
+.host-submit .check {
+  content: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20style%3D%22fill%3A%23FFFFFF%3B%22%20points%3D%2214%2C4%2011%2C1%205.003%2C6.997%203%2C5%200%2C8%204.966%2C13%204.983%2C12.982%205%2C13%20%22%2F%3E%3C%2Fsvg%3E");
+  height: 100%;
+  width: 100%;
+  margin-top: -50%;
+  padding-top: 50%;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Regular.woff") format("woff");
+}
